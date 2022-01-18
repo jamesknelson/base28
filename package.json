@@ -7,6 +7,10 @@
   "main": "dist/umd/base28.js",
   "module": "dist/base28.js",
   "types": "dist/ts/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesknelson/base28.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build:ts": "tsc -p tsconfig.json --module es2015 --outDir dist/ts --declaration",
