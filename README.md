@@ -1,6 +1,6 @@
-# opaque-id
+# base28
 
-**Represent 28-bit integers as 6-character base-28 strings – an ideal format for URLs.**
+**Represent your integer database ids as 6-character base-28 strings – an ideal format for URLs.**
 
 Maximum supported input is 0x0fffffff, i.e. 268,435,455.
 

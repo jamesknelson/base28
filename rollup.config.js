@@ -10,12 +10,12 @@ const config = {
   output: {
     file:
       format === 'es'
-        ? 'dist/opaque-id.js'
+        ? 'dist/base28.js'
         : env === 'production'
-        ? 'dist/umd/opaque-id.min.js'
-        : 'dist/umd/opaque-id.js',
+        ? 'dist/umd/base28.min.js'
+        : 'dist/umd/base28.js',
     format: format,
-    name: 'OpaqueId',
+    name: 'Base28',
     sourcemap: true,
   },
   external: format === 'umd' ? [] : ['semver'],
