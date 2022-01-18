@@ -2,9 +2,9 @@
 
 **Represent your integer database ids as 6-character base-28 strings – an ideal format for URLs.**
 
-Maximum supported input is 0x0fffffff, i.e. 268,435,455.
-
-*Distributable size is 2.7kb, minified and gzipped. **Zero** runtime dependencies.*
+- Maximum supported input is 0x0fffffff, i.e. 268,435,455.
+- Distributable size is 2.7kb, minified and gzipped.
+- *Zero* runtime dependencies.
 
 
 ## Base28 Alphabet
@@ -34,10 +34,12 @@ These numbers and letters have been picked according to the criteria:
 
 It's often undesireable for sequential ids to be readily [identified](https://en.wikipedia.org/wiki/German_tank_problem) as such. To avoid this, this encoding [obfuscates](https://stackoverflow.com/questions/8554286/obfuscating-an-id) your ids by applying a reversible pseudo-random looking mapping during encoding and decoding. For example:
 
+```
 0 -> GXBSXJ -> 0
 1 -> PNPV8H -> 1
 2 -> M3BXDH -> 2
 3 -> TSP3GS -> 3
+```
 
 While this won't prevent any dedicated attackers from iterating through your ids, it will at least provide some protection against casual voyeurs.
 
