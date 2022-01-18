@@ -14,7 +14,9 @@ export const encodeBase28 = (b: number): string => {
 }
 
 export const decodeBase28 = (b28: string): number => {
-  const parts = Array.from(b28).map((x: string) => BASE28_ALPHABET.indexOf(x))
+  const parts = Array.from(b28.toUpperCase()).map((x: string) =>
+    BASE28_ALPHABET.indexOf(x),
+  )
   if (parts.some((inc) => inc < 0) || b28.trim() === '') {
     throw new TypeError('not base28')
   }
