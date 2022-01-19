@@ -1,4 +1,20 @@
-import { encodeBase28, decodeBase28 } from '../src/base28'
+import { encodeBase28, decodeBase28, validateBase28 } from '../src/base28'
+
+test('correctly validates "BBBBBC" as base28', () => {
+  expect(validateBase28('BBBBBC')).toBeTruthy()
+})
+
+test('correctly validates "BBBBBBC" as NOT base28', () => {
+  expect(validateBase28('BBBBBBC')).not.toBeTruthy()
+})
+
+test('correctly validates "BBBBC" as NOT base28', () => {
+  expect(validateBase28('BBBBC')).not.toBeTruthy()
+})
+
+test('correctly validates "IBBBBC" as NOT base28', () => {
+  expect(validateBase28('IBBBBC')).not.toBeTruthy()
+})
 
 test('test that "1" encodes to base28 correctly', () => {
   const id = encodeBase28(1)

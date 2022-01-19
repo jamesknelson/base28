@@ -1,6 +1,6 @@
 {
   "name": "base28",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "James N Nelson <james@jamesknelson.com>",
   "description": "Format sequential database ids as 6-character case-insensitive strings – ideal for URLs.",

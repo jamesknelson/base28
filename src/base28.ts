@@ -2,6 +2,9 @@
 
 const BASE28_ALPHABET = 'BCDFGHJKMNPQRSTVWXYZ23456789'
 
+export const validateBase28 = (input: string) =>
+  new RegExp('^[' + BASE28_ALPHABET + ']{6}$').test(input)
+
 export const encodeBase28 = (b: number): string => {
   const alphabetLength = BASE28_ALPHABET.length
   let u58 = ''
