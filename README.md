@@ -58,7 +58,7 @@ Pull requests would be appreciated for:
 
 - Configuration of the obfuscator. In particular, it should be possible to pick configure the XOR and ROT numbers through a single large integer.
 
-- Much of the size of this library is due to a bundled, paired-down version of Google's BigInt polyfill. Exporting a second distributable with native BigInt would be a great pull request.
+- Much of the size of this library is due to a bundled, pared-down version of Google's BigInt polyfill. Exporting a second distributable with native BigInt would be a great pull request.
 
 
 ## License
