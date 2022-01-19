@@ -4,6 +4,10 @@ test('correctly validates "BBBBBC" as base28', () => {
   expect(validateBase28('BBBBBC')).toBeTruthy()
 })
 
+test('correctly validates "bbbbbc" as base28', () => {
+  expect(validateBase28('bbbbbc')).toBeTruthy()
+})
+
 test('correctly validates "BBBBBBC" as NOT base28', () => {
   expect(validateBase28('BBBBBBC')).not.toBeTruthy()
 })
@@ -21,8 +25,13 @@ test('test that "1" encodes to base28 correctly', () => {
   expect(id).toEqual('BBBBBC')
 })
 
-test('test that "1" decodes to base28 correctly', () => {
+test('test that "BBBBBC" decodes to base28 correctly', () => {
   const id = decodeBase28('BBBBBC')
+  expect(id).toEqual(1)
+})
+
+test('test that "bbbbbc" decodes to base28 correctly', () => {
+  const id = decodeBase28('bbbbbc')
   expect(id).toEqual(1)
 })
 
